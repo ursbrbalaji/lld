@@ -40,6 +40,8 @@ public class Main {
             System.out.println(document.toString());
         }
 
+        // Remove Document
+        searchEngine.removeDocument("Document Number 3 : User Naga Utpala");
         // Created Date Word Search Ascending Order
         System.out.println("\nWord Search - Document : Sort - CreatedAt + Ascending");
         documentList = searchEngine.search("User Taarush", SearchType.WORD_SEARCH, ResultsOrderType.CREATED, SortOrder.ASC);

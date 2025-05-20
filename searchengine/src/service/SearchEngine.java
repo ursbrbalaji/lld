@@ -10,10 +10,13 @@ import search.SearchStrategy;
 import search.SearchStrategyFactory;
 import search.SearchType;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class SearchEngine {
     private static SearchEngine searchEngine;
-    private DocumentDB documentDB;
+    private final DocumentDB documentDB;
 
     private SearchEngine() {
         documentDB = new DocumentDB();
